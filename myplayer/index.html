@@ -2,11 +2,38 @@
 <html>
 	<head>
 		<title>My Media Player</title>
+		<meta charset="utf-8">
 		<script type="text/javascript" src="js/jQuery v2.1.0.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
-		
+		<div id="header">
+			<p id="logo"><a href="index.html">My Player</a></p>
+			<p id="login">登入|</p>
+			<p id="regist">注册</p>
+		</div>
+		<div id="leader" class="block">
+			<div id="leader1" class="Lead">
+				<div class="leaderCover">这里是用来写音乐播放器的介绍的</div>
+				<p>音乐</p>
+			</div>
+			<div id="leader2" class="Lead">
+				<div class="leaderCover">这里是用来写视频播放器的介绍的</div>
+				<p>视频</p>
+			</div>
+			<div id="leader3" class="Lead">
+				<div class="leaderCover">这里是用来介绍图库的</div>
+				<p>图库</p>
+			</div>
+			<div id="leader4" class="Lead">
+				<div class="leaderCover">这里用来写文本阅读器的介绍</div>
+				<p>文本</p>
+			</div>
+		</div>
+		<div id="logWindow">
+			<div id="logClose">Close|关闭</div>
+			<iframe src="php/login.html" id="logFrame" frameborder="0"></iframe>
+		</div>
 	</body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<style type="text/css">
+	    fieldset{width:320px; margin: 0 auto;font-size:12px;}
+	    legend{font-weight:bold; font-size:14px;}
+	    label{float:left; width:70px; margin-left:10px;}
+	    .left{margin-left:80px;}
+	    .input{width:150px;}
+	    span{color: #666666;}
+	</style>
+	<body>
+		<fieldset>
+			<legend>登录</legend>
+			<form action="login.php" >
+				<p>
+					<label for="username" class="label">用户名：</label>
+					<input id="username" name="username" type="text" class="input"></input>
+				</p>
+				<p>
+					<label for="password" class="label" >密码：</label>
+					<input id="password" name="password" type="password" class="input"></input>
+				</p>
+				<p>
+					<input id="submit" name="submit" type="submit" value="登录" class="left"></input>
+				</p>
+			</form>
+		</fieldset>
+	</body>
+</html>

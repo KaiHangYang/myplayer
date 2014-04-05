@@ -1,0 +1,121 @@
+body{
+	margin: 0;
+}
+#header{
+	width:100%;
+	height: 24px;
+	background-color: #1D1F20;
+	position: fixed;
+	box-shadow: 0px 3px 4px black;
+	z-index: 10;
+}
+#header p{
+	position: absolute;
+	margin: 3px;
+}
+#logo a{
+	left: 0;top: 0;
+	text-decoration: none;
+	color: white;
+}
+#regist{
+	right: 0;top: 0;
+	color: white;
+	cursor: pointer;
+}
+#login{
+	right:34px;top: 0;
+	color: white;
+	cursor: pointer;
+}
+#logWindow{
+	width: 40%;
+	height: 70%;
+	background-color: #F6ECDA;
+	position: absolute;
+	bottom: 0;top: 0;left: 0;right: 0;
+	margin: auto;
+	display: none;
+	opacity: 0.8;
+	z-index: 9;
+}
+#logClose{
+	width: 65px;
+	height: 15px;
+	position: absolute;
+	top: 0;right: 0; 
+	cursor: pointer;
+	font-size: 14px;
+}
+#logFrame{
+	width: 100%;
+	height: 60%;
+	position: absolute;
+	top: 20%;
+}
+#leader{
+	background-color: #00062D;
+	width: 100%;
+	height: 800px;
+	position: absolute;
+}
+#leader .Lead:hover{
+	-webkit-transform:scale(0.97, 0.97);
+}
+#leader .Lead{
+	position: relative;
+	float: left;
+	height: 47.7%;
+	margin: 0.5%;
+	box-shadow: 0 0 5px gold;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+#leader p{
+	margin: 0px;
+	color: white;
+	font-size: px;
+	position: absolute;
+	bottom: 0;
+	text-shadow: 0 0 20px white;
+}
+#leader1{
+	width: 39%;
+	background-color: #3D0099;
+}
+#leader2{
+	width: 59%;
+	background-color: #00697A;
+}
+#leader2 p{
+	right: 0;
+}
+#leader3{
+	width: 59%;
+	background-color: #006605;
+}
+#leader4{
+	width: 39%;
+	background-color: #663900;
+}
+#leader4 p{
+	right: 0;
+}
+.leaderHide{
+	opacity: 0;
+}
+.leaderShow{
+	z-index: 1;
+}
+.leaderCover{
+	opacity: 0;
+	margin: 0;
+	width: 100%;height: 100%;
+	background-color: black;
+	text-indent: 2em;
+	font-size: 20px;
+	color: white;
+	-webkit-transition: all 0.4s ease-in-out;
+}
+.leaderCover:hover{
+	opacity: 0.3;
+}

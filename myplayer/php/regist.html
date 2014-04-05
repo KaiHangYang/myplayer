@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+			fieldset {width: 500px;margin: 0 auto;font-size: 12px;}
+			legend {font-weight: bold;font-size: 14px;}
+			label {float: left;width: 70px;margin-left: 10px;}
+			.left {margin-left: 80px;}
+			.input {width: 150px;}
+			.error{color: red;}
+		</style>
+	</head>
+	<body>
+		<fieldset>
+			<legend>用户注册</legend>
+			<form action="regist.php" method="post" name="registForm" id="registForm" onSubmit="return inputTest(this)">
+				<p>
+					<label for="username" class="label">用户名：</label>
+					<input type="text" id="username" name="username" class="input" placeholder="3-15个数字、字母下划线。"/>
+					<span id="usernameError" class="error"></span>
+				</p>
+				
+				<p>
+					<label for="password" class="label">密码：</label>
+					<input type="password" id="password" name="password" class="input" placeholder="至少6位字母数字混合。"/>
+					<span id="passwordError" class="error"></span>
+				</p>
+
+				<p>
+					<label for="repass" class="label">重复密码：</label>
+					<input type="password" name="repass" id="repass" class="input" placeholder="前后输入要一致。"/>
+					<span id="repassError" class="error"></span>
+				</p>
+
+				<p>
+					<input type="submit" name="submit" id="submit" value="提交注册" class="left"/>
+				</p>
+			</form>
+		</fieldset>
+	</body>
+	<script type="text/javascript">
+		function inputTest(registForm){
+			if (registForm.username.value == ""){
+				document.getElementById("usernameError").innerHTML = "用户名不能为空！";
+				registForm.username.focus();
+				return false;
+			}
+			else{
+				document.getElementById("usernameError").innerHTML = "";
+			}
+
+			if (registForm.password.value == ""){
+				document.getElementById("passwordError").innerHTML = "密码不能为空！";
+				registForm.password.focus();
+				return false;
+			}
+			else{
+				document.getElementById("passwordError").innerHTML = "";
+			}
+			
+			if (registForm.password.value != registForm.repass.value){
+				document.getElementById("repassError").innerHTML = "前后两次密码输入不一致！";
+				registForm.repass.focus();
+				return false;
+			}
+			else{
+				document.getElementById("repassError").innerHTML = "";
+			}
+		}
+	</script>
+</html>
